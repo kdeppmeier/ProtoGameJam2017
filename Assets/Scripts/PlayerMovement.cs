@@ -14,11 +14,13 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         if (Input.GetKey("a"))
         {
-            rb.AddForce(-transform.right * speed);
+            //rb.AddForce(-transform.right * speed);ight
+            rb.MovePosition(rb.position + speed * Time.deltaTime * (new Vector2 (-1, 0)));
         }
         else if (Input.GetKey("d"))
         {
-            rb.AddForce(transform.right * speed);
+            //rb.AddForce(transform.right * speed);
+            rb.MovePosition(rb.position + speed * Time.deltaTime * (new Vector2(1, 0)));
         }   
     }
 }
