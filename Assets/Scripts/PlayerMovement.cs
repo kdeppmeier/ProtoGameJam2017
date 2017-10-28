@@ -12,25 +12,37 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody2D rb;
     public LayerMask groundLayer;
 
+    public Sprite leftSprite;
+    public Sprite rightSprite;
+    private SpriteRenderer playerSprite;
+
+    private bool facingRight;
+
 	// Use this for initialization
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody2D>();
         //levelCompletePanel = GameObject.Find("LevelComplete");
+        facingRight = true;
+        playerSprite = gameObject.GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
+        bool prevFacingRight = facingRight;
         if (Input.GetKey("a"))
         {
             //rb.AddForce(-transform.right * speed);ight
             //rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.left);
             rb.velocity = new Vector2(-speed, rb.velocity.y);
+            facingRight = false;
         }
         else if (Input.GetKey("d"))
         {
             //rb.AddForce(transform.right * speed);
             //rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.right);
             rb.velocity = new Vector2(speed, rb.velocity.y);
+            facingRight = true;
         }
         else
         {
@@ -46,7 +58,18 @@ public class PlayerMovement : MonoBehaviour {
                 //rb.AddForce(Vector2.up * jumpSpeed);
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
-        }  
+        }
+        if (prevFacingRight != facingRight)
+        {
+            if (facingRight)
+            {
+                playerSprite.sprite = rightSprite;
+            }
+            else
+            {
+                playerSprite.sprite = leftSprite;
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
