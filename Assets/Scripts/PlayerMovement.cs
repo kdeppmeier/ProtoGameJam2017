@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour {
         {
             //rb.AddForce(transform.right * speed);
             rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.right);
-        }   
+        }
+        else if (Input.GetKey("w"))
+        {
+            rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.up);
+        }  
     }
 }
