@@ -7,7 +7,10 @@ public class OnHitDeath : MonoBehaviour {
     public string scene_name = "GameOver";
     void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(scene_name);
+        if (other.tag == "Player")
+        {
+            SceneManager.LoadScene(scene_name);
+        }
     }
     // Use this for initialization
     void Start () {

@@ -11,3 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/GameOver.unity
     guid: 6ba61a3b08903a3469fd896ff7c4bc95
+  - enabled: 1
+    path: Assets/_Scenes/Kaitlyn2.unity
+    guid: 88bc4149f2697584c8084f62e2e52cfc
+  - enabled: 1
+    path: Assets/_Scenes/Kaitlyn.unity
+    guid: 2a169a80678f0b14083ac46ff9aa2794
+  - enabled: 1
+    path: Assets/_Scenes/Levels.unity
+    guid: a11ca0b5645c70a43b23809b173a5e56
