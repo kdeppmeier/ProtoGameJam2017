@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Police : MonoBehaviour {
 	private Vector2 MovingDirection = Vector2.left;	//initial movement direction
-    public float left = 1.5f, right = -.5f;
+    public float right = 1.5f, left = -.5f;
 	// Use this for initialization
 	void Start () {
 	}
@@ -15,11 +15,11 @@ public class Police : MonoBehaviour {
 	}
 
 	void UpdateMovement(){
-		if (this.transform.position.x > left) {
+		if (this.transform.position.x > right) {
 			MovingDirection = Vector2.left;
 			gameObject.GetComponent<SpriteRenderer> ().flipX = true;
 
-		} else if (this.transform.position.x <right) {
+		} else if (this.transform.position.x <left) {
 			MovingDirection = Vector2.right;
 			gameObject.GetComponent<SpriteRenderer> ().flipX = false;
 
