@@ -7,12 +7,15 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpHeight;
     public float groundDistance;
 
+    public GameObject levelCompletePanel;
+
     private Rigidbody2D rb;
     public LayerMask groundLayer;
 
 	// Use this for initialization
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        //levelCompletePanel = GameObject.Find("LevelComplete");
 	}
 	
 	// Update is called once per frame
@@ -44,5 +47,15 @@ public class PlayerMovement : MonoBehaviour {
                 rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             }
         }  
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Finish"))
+        {
+            //Debug.Log("Level Completed");
+            //Level end stuff - pop-up menu?
+            levelCompletePanel.SetActive(true);
+        }
     }
 }
