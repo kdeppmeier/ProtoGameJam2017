@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     public float speed;
     public float jumpSpeed;
+    public float groundDistance;
+
     private Rigidbody2D rb;
     public LayerMask groundLayer;
 
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (Input.GetKey("w"))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.75F, groundLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, groundDistance, groundLayer);
 
             if (hit.collider != null)
             {
