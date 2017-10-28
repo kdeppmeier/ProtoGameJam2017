@@ -24,7 +24,12 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (Input.GetKey("w"))
         {
-            rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.up);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1F);
+
+            if (hit.collider != null)
+            {
+                rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.up);
+            }
         }  
     }
 }
