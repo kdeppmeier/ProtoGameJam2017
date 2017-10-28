@@ -170,6 +170,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  leftSprite: {fileID: 21300000, guid: 78aeb22b3ef39314f95aa1680084588a, type: 3}
+  rightSprite: {fileID: 21300000, guid: cc15f6f3c42bee84b96d5fdec31a9067, type: 3}
 --- !u!124 &124328074973713902
 Behaviour:
   m_ObjectHideFlags: 1
