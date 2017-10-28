@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     public float speed;
+    public float jumpSpeed;
     private Rigidbody2D rb;
     public LayerMask groundLayer;
 
@@ -30,7 +31,8 @@ public class PlayerMovement : MonoBehaviour {
 
             if (hit.collider != null)
             {
-                rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.up);
+                //rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.up);
+                rb.AddForce(Vector2.up * jumpSpeed);
             }
         }  
     }
