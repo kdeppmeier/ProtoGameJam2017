@@ -15,9 +15,9 @@ public class CoinCountUI : MonoBehaviour
         coinCount = 0;
 	}
 	
-	public void AddCoin ()
+	public void AddCoin (int coinValue)
     {
-        coinCount += 1;
+        coinCount += coinValue;
         coinCountText.text = "Coins: " + coinCount.ToString();
         StartCoroutine(TextColorFlash());
     }

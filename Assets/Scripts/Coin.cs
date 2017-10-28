@@ -10,7 +10,7 @@ public class Coin : MonoBehaviour {
     {
         if(other.gameObject.tag.Equals("Player"))
         {
-            coinCount.GetComponent<CoinCountUI>().AddCoin();
+            coinCount.GetComponent<CoinCountUI>().AddCoin(1);
             Destroy(gameObject);
         }
     }
