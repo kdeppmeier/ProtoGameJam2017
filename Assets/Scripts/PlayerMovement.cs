@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
     public float speed;
     private Rigidbody2D rb;
+    public LayerMask groundLayer;
+
 	// Use this for initialization
 	void Start () {
         rb = gameObject.GetComponent<Rigidbody2D>();
@@ -24,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (Input.GetKey("w"))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1F);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1F, groundLayer);
 
             if (hit.collider != null)
             {
