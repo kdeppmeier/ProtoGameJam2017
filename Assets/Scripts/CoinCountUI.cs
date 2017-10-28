@@ -19,5 +19,13 @@ public class CoinCountUI : MonoBehaviour
     {
         coinCount += 1;
         coinCountText.text = "Coins: " + coinCount.ToString();
+        StartCoroutine(TextColorFlash());
+    }
+
+    IEnumerator TextColorFlash()
+    {
+        coinCountText.color = Color.yellow;
+        yield return new WaitForSeconds(0.3F);
+        coinCountText.color = Color.gray;
     }
 }
