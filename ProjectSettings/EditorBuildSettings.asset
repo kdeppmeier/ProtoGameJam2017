@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/Kaitlyn.unity
+    guid: 2a169a80678f0b14083ac46ff9aa2794
