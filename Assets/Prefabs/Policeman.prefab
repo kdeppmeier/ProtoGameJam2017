@@ -22,7 +22,11 @@ GameObject:
   - component: {fileID: 212633455834418870}
   - component: {fileID: 61870097816271760}
   - component: {fileID: 114783247761671422}
+<<<<<<< Updated upstream
   - component: {fileID: 114215059922427818}
+=======
+  - component: {fileID: 114823723312596656}
+>>>>>>> Stashed changes
   m_Layer: 0
   m_Name: Policeman
   m_TagString: Untagged
@@ -68,7 +72,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!114 &114215059922427818
+=======
+--- !u!114 &114783247761671422
+>>>>>>> Stashed changes
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1072009079634124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+<<<<<<< Updated upstream
+  m_Script: {fileID: 11500000, guid: f2eff15a0e8b88341b6df839b70c20d7, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: 6f047ff54a015be49a5086b65177a029, type: 3}
+>>>>>>> Stashed changes
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene_name: GameOver
+--- !u!114 &114823723312596656
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -79,18 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2eff15a0e8b88341b6df839b70c20d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114783247761671422
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1072009079634124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f047ff54a015be49a5086b65177a029, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene_name: GameOver
 --- !u!212 &212633455834418870
 SpriteRenderer:
   m_ObjectHideFlags: 1
