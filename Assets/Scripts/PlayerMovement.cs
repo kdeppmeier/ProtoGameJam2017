@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         else if (Input.GetKey("w"))
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1F, groundLayer);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.75F, groundLayer);
 
             if (hit.collider != null)
             {
