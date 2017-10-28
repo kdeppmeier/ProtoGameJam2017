@@ -15,12 +15,12 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("a"))
         {
             //rb.AddForce(-transform.right * speed);ight
-            rb.MovePosition(rb.position + speed * Time.deltaTime * (new Vector2 (-1, 0)));
+            rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.left);
         }
         else if (Input.GetKey("d"))
         {
             //rb.AddForce(transform.right * speed);
-            rb.MovePosition(rb.position + speed * Time.deltaTime * (new Vector2(1, 0)));
+            rb.MovePosition(rb.position + speed * Time.deltaTime * Vector2.right);
         }   
     }
 }
