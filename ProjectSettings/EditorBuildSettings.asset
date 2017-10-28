@@ -4,24 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/_Scenes/Main menu.unity
-    guid: 0353c500f78fd2946835218cec125677
-  - enabled: 1
-    path: Assets/_Scenes/Main.unity
-    guid: 2db4d759e7e39b3489c7b2838c9f32df
-  - enabled: 1
-    path: Assets/_Scenes/Kaitlyn.unity
-    guid: 2a169a80678f0b14083ac46ff9aa2794
-=======
-    path: Assets/_Scenes/Kaitlyn.unity
-    guid: 2a169a80678f0b14083ac46ff9aa2794
-  - enabled: 1
-    path: Assets/_Scenes/Blake.unity
-    guid: 4eda4b997cfc1c04fb112f7b93c816ed
-  - enabled: 1
-    path: Assets/_Scenes/Main.unity
-    guid: 2db4d759e7e39b3489c7b2838c9f32df
->>>>>>> 1f5381e42a7d3c590ab08881ff86a5a5a026c150
+  m_Scenes: []
