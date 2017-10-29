@@ -79,6 +79,8 @@ public class PlayerMovement : MonoBehaviour {
             //Debug.Log("Level Completed");
             //Level end stuff - pop-up menu?
             levelCompletePanel.SetActive(true);
+            rb.velocity = Vector2.zero;
+            enabled = false;
         }
     }
 }
