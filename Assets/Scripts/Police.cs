@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Police : MonoBehaviour {
 	private Vector2 MovingDirection = Vector2.left;	//initial movement direction
-    public float right = 1.5f, left = -.5f;
+    public float right, left;
 
     public Sprite leftSprite;
     public Sprite rightSprite;
