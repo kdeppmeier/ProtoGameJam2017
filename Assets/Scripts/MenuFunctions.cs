@@ -19,4 +19,9 @@ public class MenuFunctions : MonoBehaviour {
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
