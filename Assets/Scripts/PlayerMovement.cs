@@ -6,7 +6,8 @@ public class PlayerMovement : MonoBehaviour {
     public float speed;
     public float jumpHeight;
     public float groundDistance;
-
+    public AudioSource winSound;
+    public AudioSource coinSound;
     public GameObject levelCompletePanel;
 
     private Rigidbody2D rb;
@@ -78,9 +79,15 @@ public class PlayerMovement : MonoBehaviour {
         {
             //Debug.Log("Level Completed");
             //Level end stuff - pop-up menu?
+            
             levelCompletePanel.SetActive(true);
             rb.velocity = Vector2.zero;
             enabled = false;
+            winSound.Play();
+        }
+        if (other.gameObject.tag.Equals("Coins"))
+        {
+            coinSound.Play();
         }
     }
 }
