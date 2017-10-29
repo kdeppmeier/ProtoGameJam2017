@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Coin : MonoBehaviour {
+public class Coin : MonoBehaviour
+{
+    //Script requires the CoinCount UI element to be present in the scene
+    private GameObject coinCount;
 
-    public GameObject coinCount;
+    void Start()
+    {
+        coinCount = GameObject.Find("CoinCount");
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
