@@ -7,6 +7,8 @@ public class OnHitDeath : MonoBehaviour {
     public string scene_name = "GameOver";
     public GameObject levelFailedPanel;
 
+    public AudioSource siren;
+
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -14,6 +16,7 @@ public class OnHitDeath : MonoBehaviour {
             //SceneManager.LoadScene(scene_name);
             levelFailedPanel.SetActive(true);
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
+            siren.Play();
         }
     }
     // Use this for initialization
