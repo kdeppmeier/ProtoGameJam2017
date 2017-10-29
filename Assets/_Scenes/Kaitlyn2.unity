@@ -112,6 +112,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!82 &35030507 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82156397434000886, guid: 83eceb2142feb9b4fbb5fc85bf626e23,
+    type: 2}
+  m_PrefabInternal: {fileID: 2097852724}
 --- !u!1 &47997511
 GameObject:
   m_ObjectHideFlags: 0
@@ -446,6 +451,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 77806980}
+--- !u!82 &133449286 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82441302948931718, guid: 83eceb2142feb9b4fbb5fc85bf626e23,
+    type: 2}
+  m_PrefabInternal: {fileID: 2097852724}
 --- !u!1 &165210721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,6 +4148,16 @@ Prefab:
       propertyPath: coinCount
       value: 
       objectReference: {fileID: 1505527429}
+    - target: {fileID: 114639337908744852, guid: ccd1c24cb8049334f9556caefcd637d3,
+        type: 2}
+      propertyPath: manScream
+      value: 
+      objectReference: {fileID: 133449286}
+    - target: {fileID: 114639337908744852, guid: ccd1c24cb8049334f9556caefcd637d3,
+        type: 2}
+      propertyPath: womanScream
+      value: 
+      objectReference: {fileID: 35030507}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccd1c24cb8049334f9556caefcd637d3, type: 2}
   m_IsPrefabParent: 0
@@ -4375,6 +4395,16 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: b30b38e39414f744f8d29ab44527438a,
         type: 3}
+    - target: {fileID: 114435036059649290, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8,
+        type: 2}
+      propertyPath: womanScream
+      value: 
+      objectReference: {fileID: 35030507}
+    - target: {fileID: 114435036059649290, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8,
+        type: 2}
+      propertyPath: manScream
+      value: 
+      objectReference: {fileID: 133449286}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8, type: 2}
   m_IsPrefabParent: 0
@@ -5168,7 +5198,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1358872048}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400, y: 300, z: 0}
+  m_LocalPosition: {x: 350.5, y: 91.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2038848874}
