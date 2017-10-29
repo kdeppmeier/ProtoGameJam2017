@@ -83,6 +83,7 @@ public class PlayerMovement : MonoBehaviour {
             levelCompletePanel.SetActive(true);
             rb.velocity = Vector2.zero;
             enabled = false;
+            GameObject.Find("infiltrator").SetActive(false);
             winSound.Play();
         }
         if (other.gameObject.tag.Equals("Coins"))
