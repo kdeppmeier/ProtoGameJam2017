@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class OnHitDeath : MonoBehaviour {
     public string scene_name = "GameOver";
+
     public GameObject levelFailedPanel;
 
-    public AudioSource siren;
+    private AudioSource siren;
+
+    void Start()
+    {
+        siren = GameObject.Find("SirenSound").GetComponent<AudioSource>();
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -19,13 +25,4 @@ public class OnHitDeath : MonoBehaviour {
             siren.Play();
         }
     }
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
