@@ -7,7 +7,8 @@ public class CommitCrime : MonoBehaviour
     public Sprite crimeCommittedSpriteLeft;
     public Sprite crimeCommittedSpriteRight;
     //public Sprite crimeCommittedSprite;
-
+    public AudioSource womanScream;
+    public AudioSource manScream;
     SpriteRenderer spriteRend;
     Police policeScript;
 
@@ -32,6 +33,16 @@ public class CommitCrime : MonoBehaviour
 
             coinCount.GetComponent<CoinCountUI>().AddCoin(crimeValue);
             gameObject.GetComponent<Collider2D>().enabled = false;
+
+            if( this.gameObject.tag.Equals("Lady"))
+            {
+                womanScream.Play();
+            }
+
+            if(this. gameObject.tag.Equals("Lawyer"))
+            {
+                manScream.Play();
+            }
         }
     }
 }

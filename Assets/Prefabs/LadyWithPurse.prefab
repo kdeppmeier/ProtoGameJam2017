@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114435036059649290}
   m_Layer: 0
   m_Name: LadyWithPurse
-  m_TagString: Untagged
+  m_TagString: Lady
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,6 +83,8 @@ MonoBehaviour:
     type: 3}
   crimeCommittedSpriteRight: {fileID: 21300000, guid: b30b38e39414f744f8d29ab44527438a,
     type: 3}
+  womanScream: {fileID: 0}
+  manScream: {fileID: 0}
   crimeValue: 5
   coinCount: {fileID: 0}
 --- !u!114 &114807672105469654
