@@ -79,7 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92fe243bf8004b3439c20889883fb292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crimeCommittedSprite: {fileID: 21300000, guid: 5305abb43cc8b754a916cd6c7a530420,
+  crimeCommittedSpriteLeft: {fileID: 21300000, guid: 5305abb43cc8b754a916cd6c7a530420,
+    type: 3}
+  crimeCommittedSpriteRight: {fileID: 21300000, guid: b30b38e39414f744f8d29ab44527438a,
     type: 3}
   crimeValue: 5
   coinCount: {fileID: 0}
@@ -96,8 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   right: 15
   left: 13
-  leftSprite: {fileID: 0}
-  rightSprite: {fileID: 0}
+  leftSprite: {fileID: 21300000, guid: 13cdfab5c42ea44468b70ebb038de9cb, type: 3}
+  rightSprite: {fileID: 21300000, guid: 647860fc83cca534a95cae3ea2a39e78, type: 3}
 --- !u!212 &212058201129819208
 SpriteRenderer:
   m_ObjectHideFlags: 1
