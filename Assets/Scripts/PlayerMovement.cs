@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+    //This script requires the LevelComplete UI Panel in the scene
+
     public float speed;
     public float jumpHeight;
     public float groundDistance;
     public AudioSource winSound;
     public AudioSource coinSound;
+
     public GameObject levelCompletePanel;
 
     private Rigidbody2D rb;

@@ -27,5 +27,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/Maria.unity
     guid: 456f37641d5d4c34ab82aab0675fcdc9
   - enabled: 1
-    path: Assets/Maria1.unity
-    guid: 2b61ccbf413a2834aaed86f5b0ff4885
+    path: Assets/_Scenes/Maria1.unity
+    guid: 9465042b31f018942aa3b99effd1d72e

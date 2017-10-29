@@ -26,7 +26,7 @@ public class Police : MonoBehaviour {
 
 	void UpdateMovement()
     {
-        bool prevFacingRight = facingRight;
+        //bool prevFacingRight = facingRight;
 
 		if (facingRight)
         {	
