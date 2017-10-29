@@ -691,6 +691,11 @@ Prefab:
       propertyPath: levelFailedPanel
       value: 
       objectReference: {fileID: 239144840}
+    - target: {fileID: 114573980239510656, guid: 5091af00fe57baa4788dc0b64163b141,
+        type: 2}
+      propertyPath: siren
+      value: 
+      objectReference: {fileID: 1760333460}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5091af00fe57baa4788dc0b64163b141, type: 2}
   m_IsPrefabParent: 0
@@ -5526,6 +5531,11 @@ Prefab:
       propertyPath: levelFailedPanel
       value: 
       objectReference: {fileID: 239144840}
+    - target: {fileID: 114573980239510656, guid: 5091af00fe57baa4788dc0b64163b141,
+        type: 2}
+      propertyPath: siren
+      value: 
+      objectReference: {fileID: 1760333460}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5091af00fe57baa4788dc0b64163b141, type: 2}
   m_IsPrefabParent: 0
@@ -5824,6 +5834,11 @@ Prefab:
       propertyPath: levelFailedPanel
       value: 
       objectReference: {fileID: 239144840}
+    - target: {fileID: 114573980239510656, guid: 5091af00fe57baa4788dc0b64163b141,
+        type: 2}
+      propertyPath: siren
+      value: 
+      objectReference: {fileID: 1760333460}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5091af00fe57baa4788dc0b64163b141, type: 2}
   m_IsPrefabParent: 0
@@ -6069,6 +6084,11 @@ Prefab:
       propertyPath: levelFailedPanel
       value: 
       objectReference: {fileID: 239144840}
+    - target: {fileID: 114573980239510656, guid: 5091af00fe57baa4788dc0b64163b141,
+        type: 2}
+      propertyPath: siren
+      value: 
+      objectReference: {fileID: 1760333460}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5091af00fe57baa4788dc0b64163b141, type: 2}
   m_IsPrefabParent: 0
@@ -7413,6 +7433,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4513617909298092, guid: b1ea8ccefdd4ab64699f4da4a55c8f48,
     type: 2}
   m_PrefabInternal: {fileID: 1757782941}
+--- !u!82 &1760333460 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 82836583026744616, guid: 83eceb2142feb9b4fbb5fc85bf626e23,
+    type: 2}
+  m_PrefabInternal: {fileID: 2097852724}
 --- !u!4 &1785296297 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4513617909298092, guid: b1ea8ccefdd4ab64699f4da4a55c8f48,
@@ -7528,6 +7553,11 @@ Prefab:
       propertyPath: levelFailedPanel
       value: 
       objectReference: {fileID: 239144840}
+    - target: {fileID: 114573980239510656, guid: 5091af00fe57baa4788dc0b64163b141,
+        type: 2}
+      propertyPath: siren
+      value: 
+      objectReference: {fileID: 1760333460}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5091af00fe57baa4788dc0b64163b141, type: 2}
   m_IsPrefabParent: 0
@@ -7908,9 +7938,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 82088119067330602, guid: 83eceb2142feb9b4fbb5fc85bf626e23,
+    - target: {fileID: 82836583026744616, guid: 83eceb2142feb9b4fbb5fc85bf626e23,
         type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
