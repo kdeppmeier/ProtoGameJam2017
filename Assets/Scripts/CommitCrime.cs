@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class CommitCrime : MonoBehaviour
 {
+    //public Sprite crimeCommittedSpriteLeft;
+    //public Sprite crimeCommittedSpriteRight;
     public Sprite crimeCommittedSprite;
+
     SpriteRenderer spriteRend;
 
     public int crimeValue;
