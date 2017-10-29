@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4828903523664922}
   - component: {fileID: 82945148525453310}
   m_Layer: 0
-  m_Name: Final Fantasy XI - Level Up Sound (High Quality)
+  m_Name: LevelPassedSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4843663116431310}
   - component: {fileID: 82441302948931718}
   m_Layer: 0
-  m_Name: Wilhelm Scream Sound Effect
+  m_Name: MaleScreamSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4796344505697638}
   - component: {fileID: 82088119067330602}
   m_Layer: 0
-  m_Name: Super Mario Bros.-Coin Sound Effect
+  m_Name: CoinSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4157934707164932}
   - component: {fileID: 82836583026744616}
   m_Layer: 0
-  m_Name: Blastwave_FX_PoliceSirenExt_S08ER.641
+  m_Name: SirenSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4219915902335016}
   - component: {fileID: 82156397434000886}
   m_Layer: 0
-  m_Name: Female Scream Sound Effects
+  m_Name: FemaleScreamSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4244577082091480}
   - component: {fileID: 82106532210523120}
   m_Layer: 0
-  m_Name: Sad Violin - MLG Sound Effects (HD)
+  m_Name: SadViolinSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 4623953432871092}
   - component: {fileID: 82243910073671030}
   m_Layer: 0
-  m_Name: Lil Pump - Gucci Gang (Official Audio)
+  m_Name: GucciGangSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
