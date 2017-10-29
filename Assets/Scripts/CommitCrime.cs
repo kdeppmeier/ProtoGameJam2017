@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CommitCrime : MonoBehaviour
 {
-    //public Sprite crimeCommittedSpriteLeft;
-    //public Sprite crimeCommittedSpriteRight;
-    public Sprite crimeCommittedSprite;
+    public Sprite crimeCommittedSpriteLeft;
+    public Sprite crimeCommittedSpriteRight;
+    //public Sprite crimeCommittedSprite;
 
     SpriteRenderer spriteRend;
+    Police policeScript;
 
     public int crimeValue;
 
@@ -17,6 +18,7 @@ public class CommitCrime : MonoBehaviour
     void Start()
     {
         spriteRend = gameObject.GetComponent<SpriteRenderer>();
+        policeScript = gameObject.GetComponent<Police>();
     }
 
 	// Use this for initialization
@@ -24,7 +26,10 @@ public class CommitCrime : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            spriteRend.sprite = crimeCommittedSprite;
+            spriteRend.sprite = crimeCommittedSpriteLeft;
+            policeScript.leftSprite = crimeCommittedSpriteLeft;
+            policeScript.rightSprite = crimeCommittedSpriteRight;
+
             coinCount.GetComponent<CoinCountUI>().AddCoin(crimeValue);
             gameObject.GetComponent<Collider2D>().enabled = false;
         }

@@ -3991,6 +3991,18 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 647860fc83cca534a95cae3ea2a39e78,
         type: 3}
+    - target: {fileID: 114435036059649290, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8,
+        type: 2}
+      propertyPath: crimeCommittedSpriteLeft
+      value: 
+      objectReference: {fileID: 21300000, guid: 5305abb43cc8b754a916cd6c7a530420,
+        type: 3}
+    - target: {fileID: 114435036059649290, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8,
+        type: 2}
+      propertyPath: crimeCommittedSpriteRight
+      value: 
+      objectReference: {fileID: 21300000, guid: b30b38e39414f744f8d29ab44527438a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ef85c5e0dbd4b94e948fff5fd43e5c8, type: 2}
   m_IsPrefabParent: 0
