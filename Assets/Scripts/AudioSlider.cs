@@ -7,8 +7,12 @@ public class AudioSlider : MonoBehaviour {
 
     public Slider Volume;
     public AudioSource music;
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Start()
+    {
+        Volume.value = 0.5f;     
+    }
+    void Update () {
         music.volume = Volume.value;
 	}
 }
