@@ -27,7 +27,15 @@ public class CommitCrime : MonoBehaviour
     {
         if (other.gameObject.tag.Equals("Player"))
         {
-            spriteRend.sprite = crimeCommittedSpriteLeft;
+            //Changes the crime victim's sprites
+            if (policeScript.GetFacingRight())
+            {
+                spriteRend.sprite = crimeCommittedSpriteRight;
+            }
+            else
+            {
+                spriteRend.sprite = crimeCommittedSpriteLeft;
+            }
             policeScript.leftSprite = crimeCommittedSpriteLeft;
             policeScript.rightSprite = crimeCommittedSpriteRight;
 

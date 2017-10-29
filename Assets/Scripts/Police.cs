@@ -69,5 +69,10 @@ public class Police : MonoBehaviour {
             }
         }*/
 	}
+
+    public bool GetFacingRight()
+    {
+        return facingRight;
+    }
 }
 
