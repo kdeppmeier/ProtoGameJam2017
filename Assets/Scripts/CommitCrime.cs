@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class CommitCrime : MonoBehaviour
 {
+    //Requires Sound prefab and Canvas with CoinCount
+
     public Sprite crimeCommittedSpriteLeft;
     public Sprite crimeCommittedSpriteRight;
     //public Sprite crimeCommittedSprite;
-    public AudioSource womanScream;
-    public AudioSource manScream;
+    private AudioSource womanScream;
+    private AudioSource manScream;
     SpriteRenderer spriteRend;
     Police policeScript;
 
     public int crimeValue;
 
-    public GameObject coinCount;
+    private GameObject coinCount;
 
     void Start()
     {
         spriteRend = gameObject.GetComponent<SpriteRenderer>();
         policeScript = gameObject.GetComponent<Police>();
+
+        coinCount = GameObject.Find("CoinCount");
+        womanScream = GameObject.Find("FemaleScreamSound").GetComponent<AudioSource>();
+        manScream = GameObject.Find("MaleScreamSound").GetComponent<AudioSource>();
     }
 
 	// Use this for initialization

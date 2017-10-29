@@ -5,14 +5,15 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //This script requires the LevelComplete UI Panel in the scene
+    //and Sound prefab
 
     public float speed;
     public float jumpHeight;
     public float groundDistance;
-    public AudioSource winSound;
-    public AudioSource coinSound;
+    private AudioSource winSound;
+    private AudioSource coinSound;
 
-    public GameObject levelCompletePanel;
+    private GameObject levelCompletePanel;
 
     private Rigidbody2D rb;
     public LayerMask groundLayer;
@@ -29,6 +30,9 @@ public class PlayerMovement : MonoBehaviour
         //levelCompletePanel = GameObject.Find("LevelComplete");
         facingRight = true;
         playerSprite = gameObject.GetComponent<SpriteRenderer>();
+        levelCompletePanel = GameObject.Find("Canvas").transform.Find("LevelComplete").gameObject;
+        winSound = GameObject.Find("LevelPassedSound").GetComponent<AudioSource>();
+        coinSound = GameObject.Find("CoinSound").GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
